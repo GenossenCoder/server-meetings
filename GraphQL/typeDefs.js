@@ -18,9 +18,10 @@ module.exports=gql`
         createMeeting(
             Fach: String!
             Link:String!
+            Datum: String!
             Uhrzeit: String!
             Plattform: String!
-            Datum: String!
+            
         ):Meetings!
         deleteMeetings(
             id: String
