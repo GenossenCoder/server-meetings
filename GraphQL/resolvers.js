@@ -1,7 +1,7 @@
 const Meetings = require('../models/Meetings')
 module.exports = {
     Query:{
-        Meetings: ()=>Meetings.find().sort({Datum: -1}),
+        Meetings: ()=>Meetings.find().sort({Datum: +1}),
     },
     Mutation:{
         createMeeting: async(_,{Fach,Link,Datum,Uhrzeit,Plattform})=>{
